@@ -11,7 +11,10 @@ Description: PloidyPeaks is a package to quantify population-level genome size v
 	The workflow is separated into three parts: 1) gating and 2) peak detection, 3) dataset output.
 	Built-in visualizations options are included throughout.
 biocViews: FlowCytometry, PeakDetection, Visualization
-Imports: data.table,
+Imports: AzureRMR,
+    AzureStor,
+    BiocFileCache,
+    data.table,
     dplyr,
     flowCore,
     ggcyto,
