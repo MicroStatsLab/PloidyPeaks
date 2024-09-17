@@ -27,6 +27,7 @@ using the grid functionality in \code{flowLineGraph()}. The user must ensure the
 flow directory and file path correspond to the same set of samples for plotting.
 }
 \examples{
+\dontrun{
 library(BiocFileCache)
 bfc <- BiocFileCache()
 urls <- c(
@@ -55,4 +56,5 @@ massFlowGraph(
   filePath = analysisFile,
   fileName = "gatedDataRSE"
  )
+}
 }
