@@ -29,7 +29,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' library(BiocFileCache)
 #' bfc <- BiocFileCache()
 #' urls <- c(
