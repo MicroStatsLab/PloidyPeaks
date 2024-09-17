@@ -86,7 +86,7 @@ cachedFiles <- sapply(urls, function(url) {
   flowSamples = c("A1_2.fcs", "A1_3.fcs", "A1_4.fcs", "A1_5.fcs", "A1_6.fcs"),
   flowColours = c("green", "blue", "red", "orange", "purple"),
   xVariable = "FITC-A",
-  flowDir = paste0(dirname(cachedFiles[[1]]), "/gated_data"),
+  flowDir = folderPath,
   grid = FALSE
  )
  flowLineGraph(
@@ -94,7 +94,7 @@ cachedFiles <- sapply(urls, function(url) {
   flowSamples = c("A1_2.fcs", "A1_3.fcs", "A1_4.fcs", "A1_5.fcs", "A1_6.fcs"),
   flowColours = NA,
   xVariable = "FITC-A",
-  flowDir = paste0(dirname(cachedFiles[[1]]), "/gated_data"),
+  flowDir = folderPath,
   grid = TRUE,
   annotations = c("RSE", 12.41, 13.16, 13.45, 8.15, 4.21),
   vertLine1 = c(150, 155, 150, 145, 140),

@@ -63,7 +63,7 @@ analysisFile <- file.path(subDir, basename(url))
 if (!file.exists(analysisFile)) file.copy(bfcadd(bfc, url), analysisFile)
 RSEOutlierDetection(
  xVariable = "FITC-A",
- flowDir = paste0(dirname(cachedFiles[[1]]), "/gated_data"),
+ flowDir = folderPath,
  filePath = analysisFile,
  fileName = "gatedDataRSE",
  alpha = 0.05

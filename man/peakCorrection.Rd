@@ -45,7 +45,7 @@ cachedFiles <- sapply(urls, function(url) {
 })
 peakCorrection(
  xVariable = "FITC-A",
- flowDir = paste0(dirname(cachedFiles[[1]]), "/gated_data"),
+ flowDir = folderPath,
  sampleName = "A1_4.fcs",
  numSubPop = 2
  )

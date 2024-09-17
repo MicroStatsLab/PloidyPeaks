@@ -60,7 +60,7 @@ cachedFiles <- sapply(urls, function(url) {
   if (!file.exists(targetFile)) file.copy(cachedFile, targetFile)
 })
 rectGateFlowSet(
- rawDir = paste0(dirname(cachedFiles[[1]]), "/raw_data"),
+ rawDir = folderPath,
  xVariable = "FITC-A",
  yVariable = "SSC-A",
  xMinValue = 50,

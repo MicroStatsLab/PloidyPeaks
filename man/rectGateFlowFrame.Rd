@@ -52,7 +52,7 @@ dir.create(subDir, showWarnings = FALSE, recursive = TRUE)
 targetFile <- file.path(subDir, basename(url))
 if (!file.exists(targetFile)) file.copy(bfcadd(bfc, url), targetFile)
 rectGateFlowFrame(
- rawDir = targetFile,
+ rawDir = subDir,
  flowName = "A1_1.fcs",
  xVariable = "FITC-A",
  yVariable = "SSC-A",

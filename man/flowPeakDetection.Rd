@@ -66,7 +66,7 @@ cachedFiles <- sapply(urls, function(url) {
 })
 flowPeakDetection(
  xVariable = "FITC-A",
- flowDir = paste0(dirname(cachedFiles[[1]]), "/gated_data"),
+ flowDir = folderPath,
  doublet = FALSE,
  saveOutputGraph = FALSE,
  singleThreshold = 8,
