@@ -39,6 +39,7 @@
 #'   targetFile <- file.path(folderPath, basename(url))
 #'   if (!file.exists(targetFile)) file.copy(cachedFile, targetFile)
 #'})
+#' url <- "https://ploidypeaksvignette.blob.core.windows.net/ploidypeaksvignettedata/analysis/ploidyPeaksOutput.csv"
 #' subDir <- file.path(bfc@cache, "csv_data")
 #' dir.create(subDir, showWarnings = FALSE, recursive = TRUE)
 #' analysisFile <- file.path(subDir, basename(url))
