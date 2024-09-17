@@ -22,6 +22,7 @@
 #' @export
 #' 
 #' @examples
+#' \dontrun{
 #' library(BiocFileCache)
 #' bfc <- BiocFileCache()
 #' urls <- c(
@@ -50,6 +51,7 @@
 #'   filePath = analysisFile,
 #'   fileName = "gatedDataRSE"
 #'  )
+#'}
 
 massFlowGraph <- function(
     xVariable = "FITC-A",
