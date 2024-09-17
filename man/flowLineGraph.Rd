@@ -82,19 +82,19 @@ cachedFiles <- sapply(urls, function(url) {
   if (!file.exists(targetFile)) file.copy(cachedFile, targetFile)
 })
  flowLineGraph(
-  flowControl = basename(cachedFiles[[1]]),
-  flowSamples = c(basename(cachedFiles[[2]]),basename(cachedFiles[[3]]), basename(cachedFiles[[4]]), basename(cachedFiles[[5]]), basename(cachedFiles[[6]])),
+  flowControl = "A1_1.fcs",
+  flowSamples = c("A1_2.fcs", "A1_3.fcs", "A1_4.fcs", "A1_5.fcs", "A1_6.fcs"),
   flowColours = c("green", "blue", "red", "orange", "purple"),
   xVariable = "FITC-A",
-  flowDir = dirname(cachedFiles[[1]]),
+  flowDir = paste0(dirname(cachedFiles[[1]]), "/gated_data"),
   grid = FALSE
  )
  flowLineGraph(
-  flowControl = basename(cachedFiles[[1]]),
-  flowSamples = c(basename(cachedFiles[[2]]),basename(cachedFiles[[3]]), basename(cachedFiles[[4]]), basename(cachedFiles[[5]]), basename(cachedFiles[[6]])),
+  flowControl = "A1_1.fcs",
+  flowSamples = c("A1_2.fcs", "A1_3.fcs", "A1_4.fcs", "A1_5.fcs", "A1_6.fcs"),
   flowColours = NA,
   xVariable = "FITC-A",
-  flowDir = dirname(cachedFiles[[1]]),
+  flowDir = paste0(dirname(cachedFiles[[1]]), "/gated_data"),
   grid = TRUE,
   annotations = c("RSE", 12.41, 13.16, 13.45, 8.15, 4.21),
   vertLine1 = c(150, 155, 150, 145, 140),
