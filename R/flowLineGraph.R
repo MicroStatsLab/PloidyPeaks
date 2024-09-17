@@ -232,7 +232,7 @@ flowLineGraph = function(
               # plotting
               pdfFile <- paste0(fileName, "_plotGrid")
               plots <- .plotSamples(sampleDs, controlDs, xVariable, annotations, vertLine1, vertLine2, samplePeaks)
-              flowPlot <- .createPDF(pdfFile, plots)
+              flowPlot <- .createPDF(flowDir, pdfFile, plots)
             }
         }else{    # no control sample is given
             if(grid == FALSE){
@@ -307,7 +307,7 @@ flowLineGraph = function(
               # plotting
               pdfFile <- paste0(fileName, "_plotGrid")
               plots <- .plotSamples(sampleDs, NA, xVariable, annotations, vertLine1, vertLine2, samplePeaks)
-              flowPlot <- .createPDF(pdfFile, plots)
+              flowPlot <- .createPDF(flowDir, pdfFile, plots)
             }
         }
     }else{    # sample set does not exist 
