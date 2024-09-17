@@ -501,3 +501,7 @@ RSEOutlierDetection(xVariable = "FITC-A",
 ```
 
 Now, we can look at the *.csv* files, plots of our samples, the distribution of RSE values, as well as the plots of our outliers.
+
+```{r, warning = FALSE, eval=FALSE, echo=TRUE}
+sessionInfo()
+```
