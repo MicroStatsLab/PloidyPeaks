@@ -105,6 +105,7 @@ flowPeakDetection = function(
     matrix(nrow=0, ncol=3)
   )
   colnames(logDs) <- c("Algorithm", "Data", "Success")
+  investigateDataNoNA <- NULL 
   
   ##Running first peak algorithm
   peakAlg1 <- .peakAlgorithm1(
