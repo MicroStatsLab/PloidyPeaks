@@ -7,6 +7,7 @@ Authors@R: c(
     person("Maxime", "Turgeon", email="turgeon.maxime@gmail.com", role="ctb"),
     person("Caitlin", "Kostna", email="caitlinkostna@shaw.ca", role="ctb"),
     person("Leanne", "Von Giese", email="microstatslab@gmail.com", role="ctb"))
+Maintainer: MicroStats Lab <microstatslab@gmail.com>
 Description: PloidyPeaks is a package to quantify population-level genome size variation from flow cytometry data without requiring user input.
 	The package uses peak detection algorithms and flow cytometry population definitions to quantify sub-populations.
 	The workflow is separated into three parts: 1) gating and 2) peak detection, 3) dataset output.
