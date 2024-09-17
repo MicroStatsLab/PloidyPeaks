@@ -44,7 +44,6 @@ This function will gate your raw .fcs file and save your gated data, a plot
 of your gated data, and a plot of the original data
 }
 \examples{
-\donttest{
 library(BiocFileCache)
 bfc <- BiocFileCache()
 url <- "https://ploidypeaksvignette.blob.core.windows.net/ploidypeaksvignettedata/raw_data/A1_1.fcs"
@@ -63,6 +62,5 @@ rectGateFlowFrame(
  yMaxValue = 800,
  savePlot = TRUE
 )
-}
 
 }

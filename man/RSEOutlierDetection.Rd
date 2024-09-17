@@ -39,6 +39,7 @@ formation using \code{flowLineGraph()} where the dots on each plot are the G1
 (blue) and G2 (green) peaks with the respective RSE in the top right corner.
 }
 \examples{
+\dontrun{
 library(BiocFileCache)
 bfc <- BiocFileCache()
 urls <- c(
@@ -67,4 +68,6 @@ RSEOutlierDetection(
  fileName = "gatedDataRSE",
  alpha = 0.05
 )
+}
+
 }
