@@ -51,7 +51,7 @@ urls <- c(
   "https://ploidypeaksvignette.blob.core.windows.net/ploidypeaksvignettedata/gated_data/A1_6.fcs"
 )
 folderPath <- file.path(bfc@cache, "gated_data")
-dir.create(folder_path, showWarnings = FALSE, recursive = TRUE)
+dir.create(folderPath, showWarnings = FALSE, recursive = TRUE)
 cachedFiles <- sapply(urls, function(url) {
   cachedFile <- bfcadd(bfc, url)
   targetFile <- file.path(folderPath, basename(url))
