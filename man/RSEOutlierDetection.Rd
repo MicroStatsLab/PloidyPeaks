@@ -50,12 +50,12 @@ urls <- c(
   "https://ploidypeaksvignette.blob.core.windows.net/ploidypeaksvignettedata/gated_data/A1_5.fcs",
   "https://ploidypeaksvignette.blob.core.windows.net/ploidypeaksvignettedata/gated_data/A1_6.fcs"
 )
-cachedFiles <- lapply(urls, function(url) {
-  cachedFile <- bfcquery(bfc, url)$rpath
-  if (is.null(cachedFile) || length(cachedFile) == 0) {
-    cachedFile <- bfcadd(bfc, url)
- }
- cachedFile
+folderPath <- file.path(bfc@cache, "gated_data")
+dir.create(folder_path, showWarnings = FALSE, recursive = TRUE)
+cachedFiles <- sapply(urls, function(url) {
+  cachedFile <- bfcadd(bfc, url)
+  targetFile <- file.path(folderPath, basename(url))
+  if (!file.exists(targetFile)) file.copy(cachedFile, targetFile)
 })
 subDir <- file.path(bfc@cache, "csv_data")
 dir.create(subDir, showWarnings = FALSE, recursive = TRUE)
