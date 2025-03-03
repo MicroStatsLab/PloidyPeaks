@@ -1,0 +1,7 @@
+@Manual{,
+  title = {PloidyPeaks},
+  author = {MicroStats Lab - University of Manitoba (Canada)},
+  year = {2024},
+  note = {R package version 1.00.0},
+  url = {https://github.com/MicroStatsLab/PloidyPeaks}
+}
